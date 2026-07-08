@@ -107,10 +107,9 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://iptvapp.online" />
         <meta name="google-site-verification" content="dQw4w9WgXcQ" />
-        <Script
+        <script
           id="schema-org"
           type="application/ld+json"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </head>
