@@ -55,11 +55,42 @@ const schemaData = {
       name: "IPTV APP",
       description:
         "Assinatura de IPTV com canais premium, filmes, séries e esportes em HD, Full HD e 4K.",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        bestRating: "5",
+        ratingCount: "10250",
+        reviewCount: "8450",
+      },
+      review: [
+        {
+          "@type": "Review",
+          author: { "@type": "Person", name: "Carlos A." },
+          reviewRating: { "@type": "Rating", ratingValue: "5" },
+          reviewBody:
+            "Já testei várias IPTV, mas a IPTV APP é incomparável. Qualidade 4K sem travamentos e suporte nota 10!",
+        },
+        {
+          "@type": "Review",
+          author: { "@type": "Person", name: "Fernanda M." },
+          reviewRating: { "@type": "Rating", ratingValue: "5" },
+          reviewBody:
+            "Assinei o plano semestral e valeu cada centavo. Meus filhos adoram os canais infantis e os filmes em Full HD.",
+        },
+        {
+          "@type": "Review",
+          author: { "@type": "Person", name: "Rafael S." },
+          reviewRating: { "@type": "Rating", ratingValue: "5" },
+          reviewBody:
+            "O teste grátis me conquistou. Em 6 horas vi que era a melhor IPTV do Brasil. Assinei o anual e não me arrependo.",
+        },
+      ],
       offers: {
         "@type": "AggregateOffer",
         priceCurrency: "BRL",
         lowPrice: "35",
         highPrice: "270",
+        offerCount: "4",
         availability: "https://schema.org/InStock",
       },
     },
